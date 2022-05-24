@@ -1,0 +1,313 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    height: 40px;
+    background-color: #52a555;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.s_pic{
+    width: 100%;
+}
+
+.Items {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 13px 0px; 
+}
+
+li {
+    padding: 10px 18px;
+}
+
+.Items a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    width: 100vw;
+    background-color: #52a555;
+    position: fixed;
+    color: white;
+    top: 0px;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#sh {
+    width: 145px;
+    height: 25px;
+    margin: 18px 10px;
+    border-radius: 15px;
+    border: 2px solid black;
+    text-align: center;
+    transition: all 0.2s linear;
+}
+
+#search:hover {
+    cursor: pointer;
+}
+
+.slideshow-container {
+    margin-top: 0px;
+}
+
+.text{
+    font-size: 3rem;
+    text-align: center;
+    width: 550px;
+    margin: auto;
+    margin-top: -450px;
+    height: 530px;
+    align-items: center;
+    font-family: 'Zen Old Mincho', serif;
+    margin-bottom: -160px;
+}
+
+#dot1{
+    text-align: center;
+}
+
+.black{
+    color: black;
+}
+
+#white{
+    color: white;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#pp{
+    margin: 90px 40px;
+    height: 600px;
+    width: 33vw;
+    border: 12px solid white;
+}
+
+#profile_pic{
+    margin-top: 0px;
+    color: black;
+    display: flex;
+    flex-direction:  row;
+    background-color: #d0f2ef;
+}
+
+.hname{
+    font-family: 'Festive', cursive;
+    margin-top: 100px;
+    font-size: 8rem;
+    text-align: center;
+}
+
+.name p{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Zen Old Mincho', serif;
+}
+
+h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Zen Old Mincho', serif;
+    /* margin-top: 29px; */
+    /* margin-bottom: 8px; */
+}
+
+#contact{
+    margin-top: -16px;
+    background-color: #f0ddff;
+}
+
+#contact_form{
+    display: flex;
+    font-family: 'Zen Old Mincho', serif;
+    font-weight: bolder;
+    flex-direction: column;
+    width: 750px;
+    margin: auto;
+    font-size: 20px;
+}
+
+.details{
+    padding: 10px 13px;
+    margin: 12px 2px;
+    
+}
+
+#c_sub{
+    padding: 10px 13px;
+    margin: 12px 320px;
+    width: 100px;
+    border-radius: 8px;
+    background-color: #ee3b6c;
+
+}
+
+footer{
+    color: white;
+    background-color: black;
+    /* border: 2px solid red; */
+}
+
+#sm{
+    display: flex;
+    justify-content: center;
+}
+
+#sm li{
+    list-style: none;
+    padding-left: 20px;
+}
+
+a[target="_email"] {
+    color: white;
+}
+a[target="_twitter"] {
+    color: #1DA1F2;
+}
+a[target="_facebook"] {
+    color: #4267B2;
+}
+a[target="_linkedin"] {
+    color:  #0077b5 ;
+}
+a[target="_instagram"] {
+    color: #8a3ab9;
+}
+
+#close{
+    display: none;
+}
+
+#menu{
+    color: white;
+    margin: 10px;
+}
+
+/* Media queries for making website responsive */
+
+@media  all and (max-width :800px){
+
+    #profile_pic{
+        flex-direction: column;
+        /* width: 700px; */
+    }
+
+    #pp{
+        width: auto;
+    }
+
+    header{
+        width: 780px
+        /* width: 600px */
+    }
+
+    .navbar{
+        display: block;
+        position: absolute;
+        left: -300px;
+        width: 200px;
+        flex-direction: column;  
+        text-align: center;
+        transition: 1s;
+        height: 85vh;
+    }
+    
+    #close{
+        display: block;
+        text-align: left;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    
+    .searchbtn{
+        margin-top: -30px;
+    }
+    
+    .Items{
+        flex-direction: column;
+        margin-top: -35px;
+        padding-bottom: 25px;
+    }
+    
+    .Items li{
+        padding-bottom: 22px;
+        font-size: 18px;
+    }
+
+    .slideshow-container{
+        margin-top: 0px;
+    }
+
+    .s_pic{
+        width: 780px;
+    }
+
+    #profile_pic{
+        justify-content: center;
+        margin-top: 58px;
+        padding: 0px 40px;
+        width: 700px;
+        padding-bottom: 20px;
+    }
+
+    #profile_pic p{
+        font-size: 17px;
+    }
+        #contact_form{
+            padding: 20px;
+            width: auto;
+        }
+
+        #sm{
+            flex-direction: row;
+            width: 800px;
+            margin-left: -20px;
+        }
+
+        footer{
+            width: 780px;
+        }
+
+        #pp{
+            display: block;
+            height: 500px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: -100px;
+        }
+
+        #contact{
+            margin-top: 0px;
+            width: max-content;
+        }
+        
+        .hname{
+            font-size: 4rem;
+        }
+
+        
+}

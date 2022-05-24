@@ -1,0 +1,306 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    height: 40px;
+    background-color: #52a555;
+}
+
+        /*    ......navbar........   */
+        
+        .Items {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            padding: 13px 0px;
+        }
+        
+        li {
+            padding: 10px 18px;
+        }
+        
+        .Items a{
+            color: white;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: black;
+        }
+        
+        .navbar {
+            display: flex;
+            width: 100vw;
+            background-color: #52a555;
+            position: fixed;
+            color: white;
+            top: 0px;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        #sh {
+            width: 145px;
+            height: 25px;
+            margin: 18px 10px;
+            border-radius: 15px;
+            border: 2px solid black;
+            text-align: center;
+            transition: all 0.2s linear;
+        }
+        
+        #search:hover {
+            cursor: pointer;
+        }
+        
+        img{
+            width: 100%;
+        }
+
+        #d_o_t{
+            text-align: center;
+        }
+
+        .text{
+            font-size: 3rem;
+            text-align: center;
+            width: 550px;
+            margin: auto;
+            margin-top: -400px;
+            height: 530px;
+            align-items: center;
+            font-family: 'Zen Old Mincho', serif;
+            margin-bottom: -153px;
+        }
+        
+        .black{
+            color: black;
+        }
+        
+        #white{
+            color: white;
+        }
+
+        img{
+            height: 550px;
+        }
+
+        /* The dots/bullets/indicators */
+        
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 2px;
+            background-color: white;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active {
+            background-color: #717171;
+        }
+        
+       
+        .teach_phil{
+            font-family: 'Zen Old Mincho', serif;
+            font-size: 20px;
+            border: 2px solid black;
+            padding:10px 20px;
+            background-color: rgb(247, 225, 225);
+            /* margin-top: -20px ; */
+        }
+        
+        h1{
+            font-family: 'Zen Old Mincho', serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            /* margin: 20px; */
+        }
+        
+        
+        .courses{
+            padding: 10px 20px;
+            background-color: #e9e8f0;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+        
+        .cou_t{
+            list-style: none;
+            font-family: 'Zen Old Mincho', serif;
+            font-size: 18px;
+        }
+        
+        .cou_t i{
+            color: purple;
+        }
+        
+        .student_project{
+            padding: 10px 20px;
+            font-family: 'Zen Old Mincho', serif;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            background-color: #d3eebd;
+            
+        }
+        
+        table {
+            border: 3px solid black;
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            text-justify: auto;
+        }
+        
+        td,th {
+            border: 3px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+        
+        th:hover {
+            cursor: pointer;
+            background-color: #52a555;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        
+        tr:nth-child(odd) {
+            background-color: #f0edc2;
+        
+        }
+        
+        /*         ........Footer..........           */
+        
+        footer {
+            color: white;
+            background-color: black;
+        }
+        
+        #sm {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #sm li {
+            list-style: none;
+            padding-left: 20px;
+        }
+        
+        a[target="_email"] {
+            color: white;
+        }
+        a[target="_twitter"] {
+            color: #1DA1F2;
+        }
+        a[target="_facebook"] {
+            color: #4267B2;
+        }
+        a[target="_linkedin"] {
+            color:  #0077b5 ;
+        }
+        a[target="_instagram"] {
+            color: #8a3ab9;
+        }
+
+        #close{
+            display: none;
+        }
+        
+        #menu{
+            color: white;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        /* Media queries for making website responsive */
+        
+        @media all and (max-width :800px){
+        
+            #profile_pic{
+                flex-direction: column;
+                /* width: 700px; */
+            }
+        
+            #pp{
+                width: auto;
+            }
+        
+            header{
+                width: 780px
+            }
+        
+            .navbar{
+                display: block;
+                position: absolute;
+                left: -300px;
+                width: 200px;
+                flex-direction: column;  
+                text-align: center;
+                transition: 1s;
+            }
+            
+            #close{
+                display: block;
+                text-align: left;
+                margin-top: 30px;
+                margin-left: 10px;
+            }
+            
+            .searchbtn{
+                margin-top: -30px;
+            }
+            
+            .Items{
+                flex-direction: column;
+                margin-top: -35px;
+                padding-bottom: 25px;
+            }
+            
+            .Items li{
+                padding-bottom: 22px;
+                font-size: 18px;
+            }
+
+            img{
+                width: 780px;
+                /* overflow: hidden; */
+            }
+
+            .teach_phil{
+                width: 735px;
+                text-align: center;
+            }
+
+            .courses{
+                width: 735px;
+            }
+
+            .student_project{
+                width: 735px;
+            }
+
+            .text{
+                margin-left: 130px;
+            }
+
+            footer{
+                    width: 780px;
+                }
+
+           #d_o_t{
+               margin-left: 230px;
+           }
+        
+                
+        }

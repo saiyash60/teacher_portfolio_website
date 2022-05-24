@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Samuel Wright Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <i class="fas fa-bars fa-lg" onclick="showmenu()" id="menu"></i>
+        <div class="navbar" id="navlinks">
+            <ul class="Items">
+                <i class="fas fa-times fa-lg" id="close" onclick="hidemenu()"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Vision.html">Vision & Mission</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Entrepreneurship.html">Innovation & Entrepreneurship</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <div class="searchbtn">
+                <input type="text" name="search" placeholder="Type to Search" id="sh">
+                <i id="search" class="fas fa-search"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="pic1.jpg" class="s_pic">
+            <div class="text" id="white"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="pic2.jpg" class="s_pic">
+            <div class="text" id="white"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="pic3.jpg" class="s_pic">
+            <div class="text" id="white"></div>
+        </div>
+        <div class="mySlides fade">
+            <img src="pic5.jpg" class="s_pic">
+            <div class="text" id="white"></div>
+        </div>
+        <div class="mySlides fade">
+            <img src="pic5.jpg" class="s_pic">
+            <div class="text" id="white"></div>
+        </div>
+
+    </div>
+
+    <div id="dot1">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+
+    <section id="profile_pic">
+        <div class="abc">
+            <img src="profilepic.jpg" alt="Profile_pic" id="pp">
+        </div>
+        <div class="name">
+            <h1 class="hname">Samuel Wright</h1>
+            <p>Samuel Wright is Assistant Professor at Cluster Innovation Centre(CIC), University of Delhi. He manages
+                research group Intelligent Systems and Social Machines(ISSM) at CIC. He leads research and innovation at
+                the intersection of human and machine communication, provides consultancy, advises technology start-up.
+                He has published research papers in reputed international journals and conferences. Wright received
+                Master in Computer Application from the University of Delhi. He is also pursuing PhD in Intelligent
+                System Development from the University of Delhi. He is @sameulwright60 on Twitter.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="abc.php" id="contact_form">
+            Your Name<input type="text" name="Name" class="details" placeholder="Enter your Name ">
+            Your Email<input type="text" name="Email" class="details" placeholder="Enter your Email">
+            Your Phone Number<input type="number" name="Email" class="details" placeholder="Enter your Phone number">
+            Describe for what you want to contact me<textarea name="Issue" class="details" cols="30" rows="3"
+                placeholder="Your message"></textarea>
+            <input type="submit" value="Submit" id="c_sub">
+        </form>
+    </section>
+
+    <footer>
+        <ul id="sm">
+            <span id="item2">
+                <li>
+                    Copyright &copy; Samuel Wright
+                </li>
+            </span>
+            <li><a href="" target="_email"><i class="fas fa-envelope fa-lg"> samuel.wright@gmail.com</i></a></li>
+            <hr>
+            <li><a href="" target="_twitter"><i class="fab fa-twitter fa-lg"></i></a></li>
+            <hr>
+            <li><a href="" target="_facebook"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+            <hr>
+            <li><a href="" target="_linkedin"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+            <hr>
+            <li><a href="" target="_instagram"><i class="fab fa-instagram fa-lg"></i></a></li>
+            <hr>
+        </ul>
+    </footer>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000);
+        }
+
+        // JavaScript for the toggle menu
+
+
+        var navlinks = document.getElementById("navlinks");
+
+        function showmenu() {
+            navlinks.style.left = "0px";
+        }
+        function hidemenu() {
+            navlinks.style.left = "-300px";
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Samuel Wright Website</title>
+    <link rel="stylesheet" href="Blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <i class="fas fa-bars fa-lg" onclick="showmenu()" id="menu"></i>
+        <div class="navbar" id="navlinks">
+            <ul class="Items">
+                <i class="fas fa-times fa-lg" id="close" onclick="hidemenu()"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Vision.html">Vision & Mission</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Entrepreneurship.html">Innovation & Entrepreneurship</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+            <div class="searchbtn">
+                <input type="text" name="search" placeholder="Type to Search" id="sh">
+                <i id="search" class="fas fa-search"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="blogs">
+        <h1>Blog Posts</h1>
+        <div id="firstrow">
+            <div class="article">
+                <img src="blog1.jpg" alt="pic">
+                <a
+                    href="https://artofcommunicationsociety.blogspot.com/2021/07/importance-of-yoga-in-our-life.html?m=1">
+                    <h3>Importance of Yoga in life</h3><br>
+                    <div id="cr">Read this Blog</div>
+                </a>
+            </div>
+            <div class="article">
+                <img src="blog4.jpg" alt="pic">
+                <a
+                    href="https://artofcommunicationsociety.blogspot.com/2021/07/fifa-world-cup-2022-footballing.html?m=1">
+                    <h3>FIFA World Cup 2022</h3><br>
+                    <div id="cr">Read this Blog</div>
+                </a>
+            </div>
+            <div class="article">
+                <img src="blog3.jpg" alt="pic">
+                <a href="https://artofcommunicationsociety.blogspot.com/2021/07/covid-19.html?m=1">
+                    <h3>The Disastrous Pandemic : COVID-19</h3><br>
+                    <div id="cr">Read this Blog</div>
+                </a>
+            </div>
+        </div>
+        <div id="secondrow">
+            <div class="article">
+                <img src="blog2.jpg" alt="pic">
+                <a
+                    href="https://artofcommunicationsociety.blogspot.com/2021/07/android-vs-ios-which-one-you-should.html?m=1">
+                    <h3>Android vs iOS : Which one you should prefer?</h3><br>
+                    <div id="cr">Read this Blog</div>
+                </a>
+            </div>
+            <div class="article">
+                <img src="blog5.jpg" alt="pic">
+                <a
+                    href="https://artofcommunicationsociety.blogspot.com/2021/07/qr-codes-innovative-ways-to-use-them-in.html">
+                    <h3>QR codes – Innovative ways to use them in small business marketing</h3><br>
+                    <div id="cr">Read this Blog</div>
+                </a>
+            </div>
+            <div class="article" id="lb">
+                <img src="blog6.jpg" alt="pic">
+                <a href="https://artofcommunicationsociety.blogspot.com/2021/07/the-covid-19-gender-gap.html">
+                    <h3>The COVID-19 Gender Gap</h3><br><br>
+                    <div id="cr" class="lb">Read this Blog</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <ul id="sm">
+            <span id="item2">
+                <li>
+                    Copyright &copy; Samuel Wright
+                </li>
+            </span>
+            <li><a href="" target="_email"><i class="fas fa-envelope fa-lg"> samuel.wright@gmail.com</i></a></li>
+            <hr>
+            <li><a href="" target="_twitter"><i class="fab fa-twitter fa-lg"></i></a></li>
+            <hr>
+            <li><a href="" target="_facebook"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+            <hr>
+            <li><a href="" target="_linkedin"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+            <hr>
+            <li><a href="" target="_instagram"><i class="fab fa-instagram fa-lg"></i></a></li>
+            <hr>
+        </ul>
+    </footer>
+
+    <script>
+        // JavaScript for the toggle menu
+
+
+        var navlinks = document.getElementById("navlinks");
+
+        function showmenu() {
+            navlinks.style.left = "0px";
+        }
+        function hidemenu() {
+            navlinks.style.left = "-300px";
+        }
+    </script>
+
+
+</body>
+
+</html>
